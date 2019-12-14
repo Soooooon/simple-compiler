@@ -6,13 +6,13 @@ package org.leonsong.compilers.lexer;
  */
 public class Token {
 
-    public final Tag tag;
+    public final int tagIndex;
 
-    public Token(Tag tag) {
-        this.tag = tag;
+    public Token(int tagIndex) {
+        this.tagIndex = tagIndex;
     }
 
     public String toString() {
-        return String.format("< %s >", tag.toString());
+        return String.format("< %d , %c >", tagIndex, tagIndex);
     }
 }

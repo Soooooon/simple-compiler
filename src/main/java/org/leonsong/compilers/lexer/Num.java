@@ -9,12 +9,12 @@ public class Num extends Token {
     public final int value;
 
     public Num(int value) {
-        super(Tag.NUM);
+        super(Tag.NUM.getIndex());
         this.value = value;
     }
 
     public String toString() {
-        return String.format("< %s , %d >", tag.toString(), value);
+        return String.format("< %d , %d >", tagIndex, value);
     }
 
 }

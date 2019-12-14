@@ -37,4 +37,19 @@ public enum Tag {
         this.index = index;
     }
 
+    /**
+     * 根据编码返回对应枚举类
+     *
+     * @param tagIndex
+     * @return
+     */
+    public static Tag getTag(int tagIndex) {
+        for (Tag tag : values()) {
+            if (tag.index == tagIndex) {
+                return tag;
+            }
+        }
+        return null;
+    }
+
 }
