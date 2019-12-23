@@ -15,7 +15,7 @@ public class Real extends Token {
     }
 
     public String toString() {
-        return String.format("< %d , %f >", tagIndex, value);
+        return "" + value;
     }
 
 }

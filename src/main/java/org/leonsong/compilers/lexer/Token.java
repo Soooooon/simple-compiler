@@ -13,6 +13,6 @@ public class Token {
     }
 
     public String toString() {
-        return String.format("< %d , %c >", tagIndex, tagIndex);
+        return "" + (char) tagIndex;
     }
 }

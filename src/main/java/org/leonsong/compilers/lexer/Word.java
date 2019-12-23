@@ -16,7 +16,7 @@ public class Word extends Token {
     }
 
     public String toString() {
-        return String.format("< %d , %s >", tagIndex, lexeme);
+        return lexeme;
     }
 
     public static final Word

@@ -14,7 +14,7 @@ public class Num extends Token {
     }
 
     public String toString() {
-        return String.format("< %d , %d >", tagIndex, value);
+        return "" + value;
     }
 
 }
