@@ -17,7 +17,7 @@ public class Do extends Stmt {
         stmt = null;
     }
 
-    public void init(Expr expr, Stmt stmt) {
+    public void init(Stmt stmt, Expr expr) {
         this.expr = expr;
         this.stmt = stmt;
 

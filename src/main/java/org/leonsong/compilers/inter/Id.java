@@ -1,6 +1,6 @@
 package org.leonsong.compilers.inter;
 
-import org.leonsong.compilers.lexer.Token;
+import org.leonsong.compilers.lexer.Word;
 import org.leonsong.compilers.symbols.Type;
 
 /**
@@ -14,8 +14,8 @@ public class Id extends Expr {
      */
     public int offset;
 
-    Id(Token token, Type type, int offset) {
-        super(token, type);
+    public Id(Word id, Type type, int offset) {
+        super(id, type);
         this.offset = offset;
     }
 }

@@ -24,11 +24,11 @@ public class Lexer {
         /**
          * 选定的保留字
          */
-        reserve(new Word("if", Tag.IF.getIndex()));
-        reserve(new Word("else", Tag.ELSE.getIndex()));
-        reserve(new Word("while", Tag.WHILE.getIndex()));
-        reserve(new Word("do", Tag.DO.getIndex()));
-        reserve(new Word("break", Tag.BREAK.getIndex()));
+        reserve(new Word("if", Tag.IF));
+        reserve(new Word("else", Tag.ELSE));
+        reserve(new Word("while", Tag.WHILE));
+        reserve(new Word("do", Tag.DO));
+        reserve(new Word("break", Tag.BREAK));
         /**
          * 其他地方定义的对象的词素
          */
@@ -150,7 +150,7 @@ public class Lexer {
             if (null != word) {
                 return word;
             } else {
-                word = new Word(str, Tag.ID.getIndex());
+                word = new Word(str, Tag.ID);
                 words.put(str, word);
                 return word;
             }

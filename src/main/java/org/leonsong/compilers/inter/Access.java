@@ -16,7 +16,7 @@ public class Access extends Op {
     public Expr index;
 
     public Access(Id array, Expr index, Type type) {
-        super(new Word("[]", Tag.INDEX.getIndex()), type);
+        super(new Word("[]", Tag.INDEX), type);
         this.array = array;
         this.index = index;
     }

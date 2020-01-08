@@ -17,7 +17,7 @@ public class Array extends Type {
     public int size = 1;
 
     public Array(int size, Type type) {
-        super("[]", Tag.INDEX.getIndex(), size * type.width);
+        super("[]", Tag.INDEX, size * type.width);
         this.size = size;
         this.of = type;
     }

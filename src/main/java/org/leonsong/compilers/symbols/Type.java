@@ -17,10 +17,10 @@ public class Type extends Word {
     }
 
     public static final Type
-            INT = new Type("int", Tag.BASIC.getIndex(), 4),
-            FLOAT = new Type("float", Tag.BASIC.getIndex(), 8),
-            CHAR = new Type("char", Tag.BASIC.getIndex(), 1),
-            BOOLEAN = new Type("boolean", Tag.BASIC.getIndex(), 1);
+            INT = new Type("int", Tag.BASIC, 4),
+            FLOAT = new Type("float", Tag.BASIC, 8),
+            CHAR = new Type("char", Tag.BASIC, 1),
+            BOOLEAN = new Type("boolean", Tag.BASIC, 1);
 
     /**
      * 判断类型是否可以转成数字
