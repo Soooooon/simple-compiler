@@ -51,7 +51,7 @@ public class Expr extends Node {
         } else if (t != 0) {
             emit(String.format("if %s goto L%d", str, t));
         } else if (f != 0) {
-            emit(String.format("if false %s goto L%d", str, f));
+            emit(String.format("iffalse %s goto L%d", str, f));
         }
     }
 
